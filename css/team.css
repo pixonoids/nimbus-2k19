@@ -1,14 +1,13 @@
 body
 {
 	margin: 0;
-	background: #ccc;
+	/* background: #082c4c;; */
 	text-align: center;
 }
 *
 {
 	box-sizing: border-box;
 	font-family:montserrat;
-	color: #333;
 	text-align: center;
 }
 
@@ -16,27 +15,23 @@ body
 #main
 {
 	margin:0 7%;
-	background: #eee;
+	/* background: #eee; */
 	/*border: 2px solid #0006;*/
 }
 
 header
 {
-	background: #fff;
+	background: #fff;	
 	border-bottom: 2px solid black;
-	/*box-shadow: 0 2px 20px 2px #3339;*/
 	position: sticky;
 	top: -30px;
-	z-index: 100;
 }
 
 header p
 {
 	margin: 0 auto;
 	padding:0 10px 10px;
-	color: #324734ff;
 	font-weight: 500;
-	/*border-bottom: 1px solid #956623;*/
 	width: 80%;
 }
 header h1
@@ -44,23 +39,15 @@ header h1
 	padding: 30px 10px 0px 10px;
 	margin: 0;
 	font-size: 2.6em;
-	color: #3f51b5;
-	text-shadow: -1px 1px 5px #3339;	
 }
 
 
 body h2
 {
-	background:#fff;
 	padding:10px 0 10px;
 	margin:0;
-	/*border: 2px solid #aaaa;*/
-	box-shadow: 0 5px 10px 0px #3335;
 	color: #444;
 	font-weight: 900;
-	/*text-shadow: 0px 500px 1px #3336;*/
-	position: sticky;
-	top: 80px;
 	z-index: 90;
 }
 
@@ -69,7 +56,6 @@ body h2
 	display: flex;
 	padding: 50px;
 	height: auto;
-	background: #eee;
 	flex-wrap: wrap;
 	justify-content:center;
 
@@ -83,17 +69,11 @@ body h2
 	position: relative;
 	min-width: 230px;
 	height: 330px;
-	background: #fff;
-	border: 2px solid #aaf5;
-	border-radius: 10px;
 	margin: 50px;
 	overflow: hidden;
 	justify-content: flex-start;
-	/*background: url(pics/bg1.jpg);*/
 	background-size: cover;
-	box-shadow:0 3px 20px 2px #0007;
-/*	box-shadow:inset 0 3px 20px 13px #000a;*/
-
+	box-shadow: 0 4px 36px -5px #555;
 }
 
 
@@ -140,8 +120,8 @@ body h2
 	text-align: center;
 	font-weight: 500;
 	width: 60%;
-	border-radius: 10px;
-	background: #009688;
+	color: white;
+	background: black;
 	z-index: 3;
 
 
@@ -152,13 +132,10 @@ body h2
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: #fff;
 	padding:90px 10px 10px 10px;
 	width: 100%;
 	position: absolute;
 	bottom: 0;	
-	/*background: linear-gradient(to bottom right,#fff5,#fff,#fffa,#fff);*/
-
 	transition: background-position 0.2s;
 }
 

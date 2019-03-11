@@ -34,6 +34,10 @@ app.get('/team',function (req,res){
   console.log("okay");
   res.sendFile(__dirname+"/team.html");
 });
+app.get('/sponsers',function (req,res){
+  console.log("okay");
+  res.sendFile(__dirname+"/sponsers.html");
+});
 //Post Method
 app.post('/adduser',function(req, res){
     var data = req.body;
