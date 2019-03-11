@@ -3322,3 +3322,140 @@ content{
     }
 }
 
+.followContent .followMenu {
+    margin: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .followMenu > *{
+        width: 22%;
+    }
+
+    .followMenu > *> *{
+        text-align: center;
+    }
+    @media only screen and (max-width: 37.5em) {
+      .followContent .followMenu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+    .followContent .followMenu h1 {
+      color: #fff;
+      font-size: 3.5em;
+      font-weight: 550;
+      margin-bottom: 20px; }
+      @media only screen and (max-width: 37.5em) {
+        .followContent .followMenu h1 {
+          height: 100%; } }
+    .followContent .followMenu a {
+      font-size: 1.2em;
+      margin-bottom: 7px;
+      color: #fafafa;
+      line-height: 1.5em;
+      vertical-align: middle;
+      border-radius: 3px; }
+      .followContent .followMenu a i {
+        color: #fff;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        margin-right: 5px;
+        border-radius: 2px; }
+      .followContent .followMenu a:hover {
+        -webkit-animation: tada 0.8s ease forwards;
+                animation: tada 0.8s ease forwards; }
+  
+  .followContent .follow__Links--other, .followContent .follow__Links--social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left; }
+    .followContent .follow__Links--other a:hover, .followContent .follow__Links--other a i, .followContent .follow__Links--social a:hover, .followContent .follow__Links--social a i {
+      background-color: transparent;
+      color: #fff; }
+    @media only screen and (max-width: 37.5em) {
+      .followContent .follow__Links--other, .followContent .follow__Links--social {
+        margin-bottom: 40px;
+        text-align: justify; } }
+  
+  @media only screen and (max-width: 37.5em) {
+    .followContent {
+      height: 100%; } }
+  
+  @media (max-width: 768px) {
+    .followContent {
+      /* .followMenu{
+              display: flex;
+              display: -webkit-flex;
+              flex-direction: column;
+              justify-content: space-around;
+              align-items: center;
+          } */ }
+      .followContent .followMenuLinks, .followContent .followLinks {
+        margin-bottom: 40px;
+        text-align: justify; }
+      .followContent .followMenu a {
+        margin-left: 0px;
+        color: white; }
+      .followContent .followLogoSection {
+        display: none; }
+      .followContent .arrow {
+        display: none; } }
+  
+    .followLogoSection{
+        position: relative;
+    }
+
+  .followContent .homeLogo {
+    width: 11rem;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 20px; }
+  
+  .followContent .followLogoSection h3 {
+    font-weight: 700; text-align: center; }
+  
+  .followContent .followLogoSection h3 sup {
+    text-transform: lowercase;
+    font-size: 10px; }
+  
+  .followContent .fa {
+    width: 25px; }
+  
+  .credits {
+    font-family: Lato;
+    font-size: 0.7em;
+    font-weight: 700;
+    color: #fff;
+    text-align: center; }
