@@ -3,21 +3,23 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     var clubs = document.querySelectorAll('.clubs-con-img');
+    var popupBacks = document.querySelectorAll('.popup');
     
-    clubs.forEach(club=>{
-        club.addEventListener('click', function(){
-            popupBack.style.opacity = 1;
-            popupBack.style.visibility = 'visible';
-        })
+    clubs.forEach((club, i)=>{
+      club.addEventListener('click', function(){
+        popupBacks[i].style.opacity = 1;
+        popupBacks[i].style.visibility = 'visible';
+      })
     })
-
-    var close = document.querySelector('.popup__close');
-    var popupBack = document.querySelector('.popup');
-    console.log(close);
-    close.addEventListener('click', function(){
-        popupBack.style.opacity = 0;
-        popupBack.style.visibility = 'hidden';
-    });
+    
+    var closes = document.querySelectorAll('.popup__close');
+    console.log(popupBacks);
+    closes.forEach((close, i)=>{
+      close.addEventListener('click', function(){
+        popupBacks[i].style.opacity = 0;
+        popupBacks[i].style.visibility = 'hidden';
+      });
+    })
     $('.clubs-con-img').each(function(i){
       var row = $(this);
       setTimeout(function() {
