@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
 @import url('https://fonts.googleapis.com/css?family=Teko');
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
 }
 body::-webkit-scrollbar {
@@ -50,10 +51,19 @@ input[type="number"]::-webkit-outer-spin-button {
   font-family: Open Sans;
 }
 .form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px;
 }
 
@@ -65,18 +75,36 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50%;
 }
 
 .register-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -113,7 +141,8 @@ input[type="number"]::-webkit-outer-spin-button {
   color: #fff;
   font-family: Montserrat;
   font-size: 20px;
-  justify-self: start;
+  -ms-grid-column-align: start;
+      justify-self: start;
 }
 .year-container ul {
   list-style: none;
@@ -158,6 +187,7 @@ input[type="number"]::-webkit-outer-spin-button {
   top: 30px;
   left: 20px;
   z-index: 5;
+  -o-transition: border 0.25s linear;
   transition: border 0.25s linear;
   -webkit-transition: border 0.25s linear;
 }
@@ -171,6 +201,7 @@ input[type="number"]::-webkit-outer-spin-button {
   top: 1.5px;
   left: 1.5px;
   margin: auto;
+  -o-transition: background 0.25s linear;
   transition: background 0.25s linear;
   -webkit-transition: background 0.25s linear;
 }
@@ -204,15 +235,26 @@ input[type="radio"]:checked ~ label {
 .registered-message{
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   bottom: 0;
   position: fixed;
   background-color: #082c4c;
   top:50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   text-align: center;
 }
 .successful{

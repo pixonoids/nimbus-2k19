@@ -22,17 +22,16 @@ body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
+
 a {
     text-decoration: none
 }
 .container{
-   background: #CB356B;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     background-attachment: fixed;
-
+    background: linear-gradient(184deg, rgba(203,54,106,1) 0%, rgba(189,63,51,1) 100%);
+    /* color: white; */
 }
+
 .clubs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -73,29 +72,50 @@ background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, F
     margin-top: 3rem
 }
 
+.clubs-con-img {
+    width: 20rem;
+    margin-bottom: 6rem;
+    cursor: pointer;
+    -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+            transform: translateX(100px);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.clubs-con-img:hover .overlay{
+    background: #e9d8af71;
+    text-align: center;
+}
+
+.clubs-con-img img {
+    width: 100%;
+}
+
 @media only screen and (max-width: 56.25em) {
     .clubs-con {
         width: 18rem;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center
+        justify-content: center;
+    }
+
+    .clubs-con-img{
+        width: 16rem;
     }
 }
 
-.clubs-con-img {
-    width: 20rem;
-    margin-bottom: 6rem;
-    cursor: pointer;
-    transform: translateX(100px);
-    transition: all 0.5s ease-in-out;
-    opacity: 0;
-}
-
-.clubs-con-img img {
-    width: 100%
-}
-
 .club-6 img{
+    -o-object-fit: fill;
     object-fit: fill;
     height: 20.9rem;
 }
@@ -111,13 +131,18 @@ background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, F
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 20px;
 }
 
-@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
     .popup {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
@@ -138,7 +163,15 @@ background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, F
 
 @media only screen and (max-width: 37.5em) {
     .popup__heading {
-        font-size: 2rem
+        font-size: 2rem;
+    }
+
+    .popup__right{
+        padding: 1rem 2rem !important;
+    }
+
+    .popup__text{
+        margin: 1rem !important;
     }
 }
 
@@ -155,9 +188,15 @@ background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, F
     border-radius: 3px;
     opacity: 1;
     -webkit-transition: all .5s .2s;
+    -o-transition: all .5s .2s;
     transition: all .5s .2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .popup__right {
@@ -267,7 +306,8 @@ background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, F
 .popup:target .popup__content {
     opacity: 1;
     -webkit-transform: translate(-50%, -50%) scale(1);
-    transform: translate(-50%, -50%) scale(1)
+    -ms-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1)
 }
 
 .popup__close:link,
@@ -280,6 +320,7 @@ background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, F
     text-decoration: none;
     display: inline-block;
     -webkit-transition: all .2s;
+    -o-transition: all .2s;
     transition: all .2s;
     line-height: 1
 }
@@ -293,14 +334,18 @@ background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, F
 }
 
 .draw-border {
-    box-shadow: inset 0 0 0 4px #58afd1;
+    -webkit-box-shadow: inset 0 0 0 4px #58afd1;
+            box-shadow: inset 0 0 0 4px #58afd1;
     color: #58afd1;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    -o-transition: color 0.25s 0.0833333333s;
     transition: color 0.25s 0.0833333333s;
     position: relative;
   }
   .draw-border::before, .draw-border::after {
     border: 0 solid transparent;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     content: '';
     pointer-events: none;
     position: absolute;
@@ -322,15 +367,21 @@ background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, F
   }
   .draw-border:hover::before, .draw-border:hover::after {
     border-color: #ffe593;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    -o-transition: border-color 0s, width 0.25s, height 0.25s;
     transition: border-color 0s, width 0.25s, height 0.25s;
     width: 100%;
     height: 100%;
   }
   .draw-border:hover::before {
-    transition-delay: 0s, 0s, 0.25s;
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+         -o-transition-delay: 0s, 0s, 0.25s;
+            transition-delay: 0s, 0s, 0.25s;
   }
   .draw-border:hover::after {
-    transition-delay: 0s, 0.25s, 0s;
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+         -o-transition-delay: 0s, 0.25s, 0s;
+            transition-delay: 0s, 0.25s, 0s;
   }
   
   .btn {
@@ -348,9 +399,15 @@ background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, F
   
   body {
     background: #1f1a25;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     min-height: 100vh;
 }
 
