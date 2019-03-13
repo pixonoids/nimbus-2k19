@@ -93,6 +93,7 @@ body h2
 	border: 5px solid #fff;
 	box-shadow:inset 0 0px 10px 3px #3339;
 	animation:move 2s infinite;
+	background-repeat: no-repeat;
 }
 
 .dp-1{
@@ -121,7 +122,7 @@ body h2
 }
 .dp-8{
 	background: url(../images/team/Umesh.jpg);
-	background-size: contain;
+	background-size: cover;
 }
 .dp-9{
 	background: url(../images/team/Shivangi.jpg);
@@ -129,11 +130,11 @@ body h2
 }
 .dp-10{
 	background: url(../images/team/Aditya.jpg);
-	background-size: contain;
+	background-size: cover;
 }
 .dp-11{
 	background: url(../images/team/Shivam.JPG);
-	background-size: contain;
+	background-size: cover;
 }
 .dp-12{
 	background: url(../images/team/Alapati.jpeg);
@@ -145,11 +146,11 @@ body h2
 }
 .dp-14{
 	background: url(../images/team/Mohit.jpeg);
-	background-size: contain;
+	background-size: cover;
 }
 .dp-15{
 	background: url(../images/team/Siddhant.jpg);
-	background-size: contain;
+	background-size: cover;
 }
 
 
