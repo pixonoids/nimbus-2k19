@@ -97,6 +97,11 @@ body h2
 	background-repeat: no-repeat;
 }
 
+.dp-faculty{
+	background: url(../images/team/prashantSir.jpeg);
+	background-size: contain;
+}
+
 .dp-1{
 	background: url(../images/team/Ashutosh.jpg);
 	background-size: contain;

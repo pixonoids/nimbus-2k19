@@ -26,6 +26,7 @@ function validateForm() {
   var city = document.forms["registration-form"].city;
   var college = document.forms["registration-form"].college;
   var phone = document.forms["registration-form"].phone;
+  
   var year = -1;
   var events = [];
   // var years = document.getElementsByName("year");
@@ -130,9 +131,13 @@ document.getElementsByTagName("form")[0].addEventListener("submit",function(e){
             }
           }
   }
-  
-
-
 
 
 });
+
+var policy = document.getElementById('policy');
+  policy.addEventListener('click', ()=>{
+    window.open('../pdf/Policy.doc');
+    // console.log('hey');
+  })
+

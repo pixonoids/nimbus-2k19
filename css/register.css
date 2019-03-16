@@ -132,6 +132,18 @@ input[type="number"]::-webkit-outer-spin-button {
   cursor: pointer;
 }
 
+#policy{
+  padding: 10px 35px;
+  font-size: 18px;
+  outline: none;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: Montserrat;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
 .year-container {
   width: 100%;
   font-family: Open Sans;
