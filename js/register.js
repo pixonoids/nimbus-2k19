@@ -137,7 +137,7 @@ document.getElementsByTagName("form")[0].addEventListener("submit",function(e){
 
 var policy = document.getElementById('policy');
   policy.addEventListener('click', ()=>{
-    window.open('../pdf/Policy.doc');
+    window.open('./pdf/Policy.doc');
     // console.log('hey');
   })
 

@@ -97,6 +97,10 @@ body h2
 	background-repeat: no-repeat;
 }
 
+.dp-director{
+	background: url(../images/team/director.jpg);
+	background-size: contain;
+}
 .dp-faculty{
 	background: url(../images/team/prashantSir.jpeg);
 	background-size: contain;

@@ -34,7 +34,7 @@ app.get('/team',function (req,res){
   console.log("okay");
   res.sendFile(__dirname+"/team.html");
 });
-app.get('/sponsers',function (req,res){
+app.get('/sponsors',function (req,res){
   console.log("okay");
   res.sendFile(__dirname+"/sponsers.html");
 });
