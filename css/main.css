@@ -3213,8 +3213,8 @@ content{
     display: grid;
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
     grid-template-columns: repeat(40, 1fr);
-    -ms-grid-rows: 1lfr 15px 1lfr;
-    grid-template-rows: repeat(2, 1lfr);
+    -ms-grid-rows: 1lfr 15px 1fr;
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 15px 20px;
     grid-auto-flow: row;
     overflow-x: scroll;
