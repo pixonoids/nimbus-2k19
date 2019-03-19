@@ -114,13 +114,15 @@ body h2
 
 .dp-faculty3{
 	background: url(../images/manoj.jpeg);
-	background-size: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 
 .dp-faculty4{
 	background: url(../images/vikram.jpeg);
-	background-size: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .dp-1{
