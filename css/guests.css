@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../images/guests/back.eps);
+    background-size: cover;
+
+}
+
+.main {
+    text-align: center;
+}
+
+.main-heading {
+    color: #777;
+    text-transform: uppercase;
+}
+
+.main-heading-primary {
+    display: block;
+    font-size: 5.0rem;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation: moveInLeft 1s ease-out;
+}
+
+.main-heading-secondary {
+    font-family: sans-serif;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 31px;
+    color: hotpink;
+    animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+    opacity: 0;
+    transform: translateX(-100px);
+    }
+    
+    80% {
+    transform: translateX(10px);
+    }
+    
+    100% {
+    opacity: 1;
+    transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+    opacity: 0;
+    transform: translateX(100px);
+    }
+    
+    80% {
+    transform: translateX(-10px);
+    }
+    
+    100% {
+    opacity: 1;
+    transform: translate(0);
+    }
+}
+
+body{
+    /* font-size: 20rem; */
+}
+
+.card-con{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 23rem;
+    margin: 3rem 5rem;
+    background-color: white;
+    box-shadow: 0px 5px 20px #555;
+}
+
+.card a {
+    color: #333;
+    text-decoration: none;
+}
+.card:hover .card-image img {
+    width: 110%;
+    /* filter: grayscale(0); */
+}
+
+.card-image {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.card-image img {
+    width: 100%;
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-property: filter width;
+    transition-duration: .3s;
+}
+
+.card-body {
+    text-align: center;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+.card-body > *{
+    padding: .4rem 0;
+}
+
+.card-date {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card-title, .card-exceprt {
+    font-family: 'Playfair Display', serif;
+}
+
+.card-date, .card-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-date, .card-excerpt {
+    color: #777;
+}
+
+.card-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card-info img{
+    width: 1rem;
+}
+
+.card-btn-con{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.card-btn,
+.card-btn:visited,
+.card-btn:link{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    background-color: aquamarine;
+    color: black;
+    border-radius: 4px;
+}
