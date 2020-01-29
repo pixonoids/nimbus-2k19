@@ -102,6 +102,14 @@ body h2
 	background-size: contain;
 }
 
+.dp-dean1{
+	background: url(../images/team/ns.jpg);
+	background-size: contain;
+}
+.dp-dean2{
+	background: url(../images/team/PK.jpg);
+	background-size: contain;
+}
 .dp-faculty1{
 	background: url(../images/team/prashantSir.jpeg);
 	background-size: contain;
@@ -113,32 +121,32 @@ body h2
 }
 
 .dp-faculty3{
-	background: url(../images/manoj.jpeg);
+	background: url(../images/team/manoj.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 
 .dp-faculty4{
-	background: url(../images/vikram.jpeg);
+	background: url(../images/team/vikram.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .dp-1{
-	background: url(../images/team/Ashutosh.jpg);
-	background-size: contain;
+	background: url(../images/team/anubhav.jpeg);
+	background-size: cover;
 }
 .dp-2{
-	background: url(../images/team/Rajkumar.jpg);
+	background: url(../images/team/krishna.jpg);
 	background-size: cover;
 }
 .dp-3{
-	background: url(../images/team/Nitish.jpeg);
-	background-size: contain;
+	background: url(../images/team/mukul.jpg);
+	background-size: cover;
 }
 .dp-4{
-	background: url(../images/team/Sweta.jpg);
+	background: url(../images/team/munish.jpeg);
 	background-size: cover;
 }
 .dp-6{
@@ -209,7 +217,7 @@ body h2
 	font-weight: 500;
 	width: 60%;
 	color: white;
-	background: black;
+	background: white;
 	z-index: 3;
 
 

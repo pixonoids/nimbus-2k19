@@ -3131,6 +3131,26 @@ content{
     }
 }
 @media(max-width: 768px){
+    .header-links{
+        position: absolute;
+        left: 3%;
+        top: 16%;
+        opacity: 0.7;
+    }
+    .nimbus-dates{
+        top: 31%;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.4rem;
+    }
+    .header-links ul{
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .header content{
+        position: absolute;
+        bottom: 2rem;
+    }
     .header content h1{
             -webkit-animation: half-heading-show 3s ease forwards ;
                     animation: half-heading-show 3s ease forwards ;
@@ -3213,8 +3233,8 @@ content{
     display: grid;
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
     grid-template-columns: repeat(40, 1fr);
-    -ms-grid-rows: 1lfr 15px 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: 1lfr 15px 1lfr;
+    grid-template-rows: repeat(2, 1lfr);
     grid-gap: 15px 20px;
     grid-auto-flow: row;
     overflow-x: scroll;
@@ -3703,6 +3723,73 @@ content{
     margin-bottom: 1rem
 }
 
+.campus{
+    padding: 2rem;
+    background: linear-gradient(180deg,rgb(0, 15, 51) 100%, rgb(0, 11, 36) 0%);
+}
+
+.campus-header{
+    font-size: 5rem;
+    color: white;
+    font-family: Open Sans;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.campus_con{
+    display: flex;
+    justify-content: space-between;
+}
+
+.campus_con .left{
+    width: 45%;
+}
+.campus_con .left img{
+    width: 100%;
+    object-fit: fill;
+}
+
+.campus_con .right{
+    width: 45%;
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.campus_con .right > *{
+    margin: 1rem 0;
+}
+.campus_con .right a{
+    color: rgb(0, 11, 36);
+    background: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.campus_con .right a:hover{
+    color: white;
+    background: rgb(0, 11, 36);;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .campus-header{
+        font-size: 4rem;
+    }
+    .campus_con{
+        flex-direction: column;
+    }
+    .campus_con .left{
+        width: 100%;
+    }
+    .campus_con .right{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
 .about {
     width: 100%;
     position: relative;
@@ -4107,4 +4194,24 @@ content{
         }
     }
     
-    
+.youtube{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 8rem;
+    background: linear-gradient(180deg, rgb(0, 15, 51) 0%, rgb(0, 8, 26) 100%);
+}
+
+.youtube iframe{
+    width: 50rem;
+    object-fit: contain;
+    height: 25.5rem;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 600px){
+    .youtube iframe{
+        width: 90%;
+        height: 14.5rem;
+    }
+}
